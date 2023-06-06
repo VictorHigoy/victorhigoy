@@ -1,6 +1,7 @@
 export default function Vector2() {
   return (
     <svg
+      className="w-full h-auto max-w-[428px] overflow-hidden"
       width="438"
       height="458"
       viewBox="0 0 438 458"
@@ -21,9 +22,9 @@ export default function Vector2() {
           width="436.958"
           height="457.113"
           filterUnits="userSpaceOnUse"
-          color-interpolation-filters="sRGB"
+          colorInterpolationFilters="sRGB"
         >
-          <feFlood flood-opacity="0" result="BackgroundImageFix" />
+          <feFlood floodOpacity="0" result="BackgroundImageFix" />
           <feBlend
             mode="normal"
             in="SourceGraphic"

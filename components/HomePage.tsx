@@ -27,7 +27,7 @@ function HomePage() {
           UI/UX & Frontend <br /> Developer
         </h1>
         <p className="sm:text-lg font-normal text-subtleBlue">
-          Hello! I'm{" "}
+          Hello! I&lsquo;m{" "}
           <span className="text-greatBlue font-bold">Victor Higoy Jr</span>, an
           experienced UI designer <br className="hidden sm:block" />
           specializing in crafting exceptional user interfaces{" "}

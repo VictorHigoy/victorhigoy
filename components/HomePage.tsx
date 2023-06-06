@@ -1,8 +1,12 @@
+"use client";
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 function HomePage() {
+  const initial = { opacity: 0, y: 150 };
+  const whileInView = { opacity: 1, y: 0 };
   return (
     <div
       className="flex flex-col justify-center relative max-w-[1300px] h-screen m-auto px-5 text-slate-100"
@@ -34,23 +38,39 @@ function HomePage() {
         victorH.
       </Link>
       <div>
-        <h1 className="text-5xl sm:text-6xl font-bold mb-5 text-subtleBlue">
+        <motion.h1
+          initial={initial}
+          whileInView={whileInView}
+          transition={{ duration: 0.2 }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl font-bold mb-5 text-subtleBlue"
+        >
           UI/UX & Frontend <br /> Developer
-        </h1>
-        <p className="sm:text-lg font-normal text-subtleBlue">
+        </motion.h1>
+        <motion.p
+          initial={initial}
+          whileInView={whileInView}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true }}
+          className="sm:text-lg font-normal text-subtleBlue"
+        >
           Hello! I&lsquo;m{" "}
           <span className="text-greatBlue font-bold">Victor Higoy Jr</span>, an
           experienced UI designer <br className="hidden sm:block" />
           specializing in crafting exceptional user interfaces{" "}
           <br className="hidden sm:block" /> with modern frontend web
           technologies.
-        </p>
-        <button
+        </motion.p>
+        <motion.button
+          initial={initial}
+          whileInView={whileInView}
+          transition={{ duration: 0.4 }}
+          viewport={{ once: true }}
           type="button"
           className="btn border text-greatBlue sm:text-lg font-semibold mt-10 py-3 px-5 rounded border-greatBlue transition-colors hover:bg-greatBlue hover:bg-opacity-10"
         >
           Recent Project
-        </button>
+        </motion.button>
       </div>
     </div>
   );

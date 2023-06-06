@@ -1,20 +1,24 @@
 import React from "react";
-import Vector1 from "@/svg/BlurredColor/Vector1";
-import Vector2 from "@/svg/BlurredColor/Vector2";
 import Link from "next/link";
 
 function HomePage() {
   return (
     <div
-      className="flex flex-col justify-center relative max-w-[1300px] h-screen max-h-screen m-auto px-5 text-slate-100 overflow-hidden xl:overflow-visible"
+      className="flex flex-col justify-center relative max-w-[1300px] h-screen m-auto px-5 text-slate-100 overflow-hidden"
       id="home"
     >
-      <div className="absolute -top-20 lg:top-0 -right-64 h-auto w-auto">
-        <Vector1 />
-      </div>
-      <div className="absolute top-96 -right-20 lg:right-28 h-auto w-auto">
+      {/* <div className="absolute -top-20 lg:top-0 -right-64">
+        <Image
+          className="object-cover w-96 h-96"
+          src={"/img/Vector1.svg"}
+          width={200}
+          height={200}
+          alt="vector1"
+        />
+      </div> */}
+      {/* <div className="absolute top-96 -right-20 lg:right-28 h-auto w-auto">
         <Vector2 />
-      </div>
+      </div> */}
 
       <Link
         href="/#home"

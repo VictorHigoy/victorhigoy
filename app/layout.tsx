@@ -12,11 +12,6 @@ export const metadata = {
   description: "Frontend Developer based in the Philippines",
 };
 
-const InterTight = League_Spartan({
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-  subsets: ["latin"],
-});
-
 export default function RootLayout({
   children,
 }: {

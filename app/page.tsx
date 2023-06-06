@@ -4,7 +4,7 @@ import About from "@/components/About";
 
 function Home() {
   return (
-    <div>
+    <div className="w-screen overflow-hidden">
       <HomePage />
       <About />
     </div>

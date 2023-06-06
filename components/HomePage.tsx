@@ -23,8 +23,8 @@ function HomePage() {
         victorH.
       </Link>
       <div>
-        <h1 className="text-5xl sm:text-7xl font-bold mb-5 text-subtleBlue">
-          Frontend Developer
+        <h1 className="text-5xl sm:text-6xl font-bold mb-5 text-subtleBlue">
+          UI/UX & Frontend <br /> Developer
         </h1>
         <p className="sm:text-lg font-normal text-subtleBlue">
           Hello! I'm{" "}

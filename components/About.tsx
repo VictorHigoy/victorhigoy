@@ -1,3 +1,4 @@
+"use client";
 import React, { Fragment } from "react";
 import ArrowRight from "@/svg/Icons/ArrowRight";
 import Link from "next/link";
@@ -10,25 +11,40 @@ import FigmaIcon from "@/svg/TechStack/FigmaIcon";
 import SassIcon from "@/svg/TechStack/SassIcon";
 import FirebaseIcon from "@/svg/TechStack/FirebaseIcon";
 import MongoDbIcon from "@/svg/TechStack/MongoDbIcon";
+import { motion } from "framer-motion";
 
 function About() {
+  const list = { hidden: { opacity: 1 } };
+  const item = { hidden: { x: -10, opacity: 1 } };
+
   const socialLinks = [
-    { link: "https://web.facebook.com/victor.higoy000/", name: "Facebook" },
+    {
+      link: "https://web.facebook.com/victor.higoy000/",
+      name: "Facebook",
+      duration: 0.03,
+    },
     {
       link: "https://www.linkedin.com/in/victor-higoy-jr-6a770320b/",
       name: "LinkedIn",
+      duration: 0.05,
     },
-    { link: "https://github.com/VictorHigoy", name: "Github" },
-    { link: "https://www.instagram.com/victorhigoy_/", name: "Instagram" },
+    { link: "https://github.com/VictorHigoy", name: "Github", duration: 0.07 },
+    {
+      link: "https://www.instagram.com/victorhigoy_/",
+      name: "Instagram",
+      duration: 0.09,
+    },
     {
       link: "https://twitter.com/higoyvictor000?t=sVQFo0bp8ELWoh7_5lndHg&s=09&fbclid=IwAR0jKe4lvHgoxWMe4zDz6JSbvR5SsqP4fEPJfWYUKGcsamMIYvBuyYrcco8",
       name: "Twitter",
+      duration: 0.11,
     },
   ];
 
   const technologyStack = [
     {
       id: 1,
+      duration: 0.03,
       name: "React.js",
       icon: <ReactIcon />,
       pXaxis: "px-[18px]",
@@ -36,6 +52,7 @@ function About() {
     },
     {
       id: 2,
+      duration: 0.05,
       name: "Next.js",
       icon: <NextIcon />,
       pXaxis: "px-5",
@@ -43,6 +60,7 @@ function About() {
     },
     {
       id: 3,
+      duration: 0.07,
       name: "Typescript",
       icon: <TypeScriptIcon />,
       pXaxis: "px-5",
@@ -50,6 +68,7 @@ function About() {
     },
     {
       id: 4,
+      duration: 0.09,
       name: "Tailwindcss",
       icon: <TailWindIcon />,
       pXaxis: "px-5",
@@ -57,6 +76,7 @@ function About() {
     },
     {
       id: 5,
+      duration: 0.11,
       name: "Bootstrap5",
       icon: <BootstrapIcon />,
       pXaxis: "px-5",
@@ -64,6 +84,7 @@ function About() {
     },
     {
       id: 6,
+      duration: 0.13,
       name: "Figma",
       icon: <FigmaIcon />,
       pXaxis: "px-[30.5px]",
@@ -71,6 +92,7 @@ function About() {
     },
     {
       id: 7,
+      duration: 0.15,
       name: "Sass",
       icon: <SassIcon />,
       pXaxis: "px-5",
@@ -78,6 +100,7 @@ function About() {
     },
     {
       id: 8,
+      duration: 0.17,
       name: "Firebase",
       icon: <FirebaseIcon />,
       pXaxis: "px-7",
@@ -85,6 +108,7 @@ function About() {
     },
     {
       id: 9,
+      duration: 0.19,
       name: "MongoDB",
       icon: <MongoDbIcon />,
       pXaxis: "px-[35px]",
@@ -104,7 +128,7 @@ function About() {
         </h2>
         <div className="block md:flex space-y-8 md:space-y-0 md:space-x-20 lg:space-x-28 mb-8">
           <div className="basis-full md:basis-2/3">
-            <p className="sm:text-lg font-normal text-subtleBlue sm:text-justify">
+            <p className="sm:text-lg font-normal text-subtleBlue ">
               As a Frontend Developer, I possess a diverse skill set that allows
               me to create engaging and intuitive user interfaces. With a strong
               understanding of modern frontend technology, I have the ability to
@@ -124,14 +148,20 @@ function About() {
             <div className="space-y-2">
               {socialLinks.map((social, index) => {
                 return (
-                  <div key={index} className="flex items-center">
+                  <motion.div
+                    initial={{ opacity: 0, x: 150 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: social.duration * 0.8 }}
+                    key={index}
+                    className="flex items-center"
+                  >
                     <ArrowRight />
                     <Link href={social.link} target="_blank">
-                      <p className="ms-5 sm:text-lg font-normal text-subtleBlue">
+                      <p className="ms-5 sm:text-lg font-normal text-subtleBlue transition-all hover:text-greatBlue">
                         {social.name}
                       </p>
                     </Link>
-                  </div>
+                  </motion.div>
                 );
               })}
             </div>
@@ -145,14 +175,17 @@ function About() {
             {technologyStack.map((tech, index) => {
               return (
                 <Fragment key={tech.id}>
-                  <div
+                  <motion.div
+                    initial={{ opacity: 0, y: 150 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3, delay: tech.duration * 0.8 }}
                     className={`${tech.pXaxis} ${tech.pYaxis} cursor-pointer overflow-hidden group relative flex items-center bg-greatBlueOpacity rounded-md shadow-xl`}
                   >
                     {tech.icon}
                     <p className="sm:text-md font-bold text-greatBlue p-5 invisible duration-300 ease-out transition  group-hover:visible absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 group-hover:bg-greatBlueOpacity">
                       {tech.name}
                     </p>
-                  </div>
+                  </motion.div>
                 </Fragment>
               );
             })}

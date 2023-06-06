@@ -1,24 +1,31 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 function HomePage() {
   return (
     <div
-      className="flex flex-col justify-center relative max-w-[1300px] h-screen m-auto px-5 text-slate-100 overflow-hidden"
+      className="flex flex-col justify-center relative max-w-[1300px] h-screen m-auto px-5 text-slate-100"
       id="home"
     >
-      {/* <div className="absolute -top-20 lg:top-0 -right-64">
+      <div className="absolute -top-20 lg:top-0 -right-64">
         <Image
-          className="object-cover w-96 h-96"
+          className="object-cover"
           src={"/img/Vector1.svg"}
-          width={200}
-          height={200}
+          width={752}
+          height={649}
           alt="vector1"
         />
-      </div> */}
-      {/* <div className="absolute top-96 -right-20 lg:right-28 h-auto w-auto">
-        <Vector2 />
-      </div> */}
+      </div>
+      <div className="absolute top-96 -right-20 lg:right-28 h-auto w-auto">
+        <Image
+          className="object-cover"
+          src={"/img/Vector2.svg"}
+          width={438}
+          height={458}
+          alt="vector2"
+        />
+      </div>
 
       <Link
         href="/#home"

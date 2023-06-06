@@ -47,7 +47,7 @@ function HomePage() {
         </p>
         <button
           type="button"
-          className="btn border text-greatBlue sm:text-lg font-semibold mt-10 py-3 px-5 rounded border-greatBlue transition-all hover:bg-greatBlue/10"
+          className="btn border text-greatBlue sm:text-lg font-semibold mt-10 py-3 px-5 rounded border-greatBlue transition-colors hover:bg-greatBlue hover:bg-opacity-10"
         >
           Recent Project
         </button>

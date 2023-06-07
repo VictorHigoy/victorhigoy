@@ -34,7 +34,7 @@ function Projects() {
       link: "https://fitness-calculation.vercel.app/",
     },
     {
-      title: "Alumni Management System",
+      title: "Learning Management System",
       tech: [
         { name: "React.js", duration: 0.03 },
         { name: "Bootstrap", duration: 0.05 },
@@ -43,7 +43,7 @@ function Projects() {
         { name: "MySQL", duration: 0.1 },
       ],
       description:
-        "Alumni Management System is a capstone project designed for six users. It offers a comprehensive approach in managing learning materials, account creation, subject tagging, and more in a systematic manner. <br /> <br /> Features: Random Snapshot, bulk creation and tagging of subjects, email notifications, robust exam interface, and faster transaction requests.",
+        "Learning Management System is a capstone project designed for six users. It offers a comprehensive approach in managing learning materials, account creation, subject tagging, and more in a systematic manner. <br /> <br /> Features: Random Snapshot, bulk creation and tagging of subjects, email notifications, robust exam interface, and faster transaction requests.",
       image: "/img/lmsProject.png",
       link: "https://lms.bcpsms.com/",
     },

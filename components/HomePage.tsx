@@ -61,7 +61,7 @@ function HomePage() {
           <br className="hidden sm:block" /> with modern frontend web
           technologies.
         </motion.p>
-        <Link href="/#projects">
+        <Link href="/ #projects">
           <motion.button
             initial={initial}
             whileInView={whileInView}

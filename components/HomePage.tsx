@@ -61,16 +61,18 @@ function HomePage() {
           <br className="hidden sm:block" /> with modern frontend web
           technologies.
         </motion.p>
-        <motion.button
-          initial={initial}
-          whileInView={whileInView}
-          transition={{ duration: 0.4 }}
-          viewport={{ once: true }}
-          type="button"
-          className="btn border text-greatBlue sm:text-lg font-semibold mt-10 py-3 px-5 rounded border-greatBlue transition-colors hover:bg-greatBlue hover:bg-opacity-10"
-        >
-          Recent Project
-        </motion.button>
+        <Link href="/#projects">
+          <motion.button
+            initial={initial}
+            whileInView={whileInView}
+            transition={{ duration: 0.4 }}
+            viewport={{ once: true }}
+            type="button"
+            className="btn border text-greatBlue sm:text-lg font-semibold mt-10 py-3 px-5 rounded border-greatBlue transition-colors hover:bg-greatBlue hover:bg-opacity-10"
+          >
+            Recent Project
+          </motion.button>
+        </Link>
       </div>
     </div>
   );

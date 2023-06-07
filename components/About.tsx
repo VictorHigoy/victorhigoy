@@ -132,7 +132,7 @@ function About() {
         />
       </div>
 
-      <div className="my-20">
+      <div className="relative my-20">
         <h2 className="relative text-2xl sm:text-4xl font-bold mb-10 sm:mb-16 text-greatBlue">
           About
           <span className="absolute -bottom-3 left-0 w-[60px] h-[2px]  bg-subtleBlue"></span>

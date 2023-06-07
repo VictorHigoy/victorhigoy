@@ -11,6 +11,7 @@ import FigmaIcon from "@/svg/TechStack/FigmaIcon";
 import SassIcon from "@/svg/TechStack/SassIcon";
 import FirebaseIcon from "@/svg/TechStack/FirebaseIcon";
 import MongoDbIcon from "@/svg/TechStack/MongoDbIcon";
+import Image from "next/image";
 import { motion } from "framer-motion";
 
 function About() {
@@ -118,9 +119,19 @@ function About() {
 
   return (
     <div
-      className="relative max-w-[1300px] m-auto px-5 text-slate-100"
+      className="relative max-w-[1300px] m-auto mb-32 px-5 lg:px-10 text-slate-100"
       id="about"
     >
+      <div className="absolute top-3/4 lg:top-72 -right-0 h-auto w-auto">
+        <Image
+          className="object-cover"
+          src={"/img/Vector2.svg"}
+          width={438}
+          height={458}
+          alt="vector2"
+        />
+      </div>
+
       <div className="my-20">
         <h2 className="relative text-2xl sm:text-4xl font-bold mb-10 sm:mb-16 text-greatBlue">
           About
@@ -128,7 +139,7 @@ function About() {
         </h2>
         <div className="block md:flex space-y-8 md:space-y-0 md:space-x-20 lg:space-x-28 mb-8">
           <div className="basis-full md:basis-2/3">
-            <p className="sm:text-lg font-normal text-subtleBlue ">
+            <p className="sm:text-lg font-normal text-subtleBlue">
               As a Frontend Developer, I possess a diverse skill set that allows
               me to create engaging and intuitive user interfaces. With a strong
               understanding of modern frontend technology, I have the ability to

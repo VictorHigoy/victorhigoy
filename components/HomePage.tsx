@@ -9,7 +9,7 @@ function HomePage() {
   const whileInView = { opacity: 1, y: 0 };
   return (
     <div
-      className="flex flex-col justify-center relative max-w-[1300px] h-screen m-auto px-5 text-slate-100"
+      className="flex flex-col justify-center relative max-w-[1300px] h-screen m-auto px-5 lg:px-10 text-slate-100"
       id="home"
     >
       <div className="absolute -top-20 lg:top-0 -right-64">
@@ -33,7 +33,7 @@ function HomePage() {
 
       <Link
         href="/#home"
-        className="absolute top-20 left-5 text-3xl font-bold font-serif text-greatBlue"
+        className="absolute top-20 left-5 lg:left-10 text-3xl font-bold font-serif text-greatBlue"
       >
         victorH.
       </Link>

@@ -1,6 +1,30 @@
+"use client";
 import React from "react";
+import { motion } from "framer-motion";
 
 function Experience() {
+  const experiences = [
+    {
+      id: 3,
+      title: "Graduation",
+      company: "Bestlink College of the Philippines",
+      description: "Bachelor of Science in Information Technology",
+    },
+    {
+      id: 2,
+      title: "Internship",
+      company: "Zkript Solutions OPC",
+      description:
+        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers.",
+    },
+    {
+      id: 1,
+      title: "Freelance",
+      description:
+        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers.",
+    },
+  ];
+
   return (
     <div
       className="relative max-w-[1300px] m-auto mb-32 px-5 lg:px-10 text-slate-100"
@@ -11,45 +35,38 @@ function Experience() {
           Experience
           <span className="absolute -bottom-3 left-0 w-[70px] h-[2px] bg-subtleBlue"></span>
         </h2>
-        <div className="space-y-28">
-          <div className="relative bg-greatBlueOpacity rounded-sm p-5 max-w-[550px] m-auto">
-            <h3 className="text-2xl font-bold text-greatBlue mb-1">
-              Graduation
-            </h3>
-            <p className="sm:text-lg font-medium text-subtleBlue mb-3">
-              Bestlink College of the Philippines
-            </p>
-            <p className="sm:text-lg font-light text-subtleBlue">
-              Bachelor of Science in Information Technology
-            </p>
-            <span className="absolute top-[216px] xsm:top-[192px] sm:top-[200px] sm:bottom-10 left-1/2 transform -translate-x-1/2 -translate-y-1/2  w-1 h-[112px]  bg-subtleBlue/20"></span>
-          </div>
-
-          <div className="bg-greatBlueOpacity rounded-sm p-5 max-w-[550px] m-auto">
-            <h3 className="text-2xl font-bold text-greatBlue mb-1">
-              Internship
-            </h3>
-            <p className="sm:text-lg font-medium text-subtleBlue mb-3">
-              Zkript Solutions OPC
-            </p>
-            <p className="sm:text-lg font-light text-subtleBlue">
-              Performed software development tasks, contributed to the design
-              and architecture of software applications, and maintained close
-              communication with senior software engineers.
-            </p>
-          </div>
-
-          <div className="bg-greatBlueOpacity rounded-sm p-5 max-w-[550px] m-auto">
-            <h3 className="text-2xl font-bold text-greatBlue mb-3">
-              Freelance
-            </h3>
-            <p className="sm:text-lg font-light text-subtleBlue">
-              Collaborated closely with clients to deliver custom software
-              solutions, ensuring seamless functionality, exceeding their
-              expectations, and providing timely support throughout the
-              development process.
-            </p>
-          </div>
+        <div>
+          {experiences.map((item, index) => {
+            return (
+              <div key={item.id}>
+                <div className="bg-greatBlueOpacity rounded-sm p-5 max-w-[550px] m-auto">
+                  <h3 className="text-2xl font-bold text-greatBlue mb-1">
+                    {item.title}
+                  </h3>
+                  <motion.div
+                    initial={{ opacity: 0, y: 150 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
+                    <p className="sm:text-lg font-medium text-subtleBlue mb-3">
+                      {item.company}
+                    </p>
+                    <p className="sm:text-lg font-light text-subtleBlue">
+                      {item.description}
+                    </p>
+                  </motion.div>
+                </div>
+                {item.id !== 1 && (
+                  <div className="divider-container flex flex-col items-center -mt-2">
+                    <div className="w-4 h-4 bg-greatBlue/90 rounded-full z-10">
+                      <div className="w-4 h-4 bg-greatBlue/90 rounded-full z-10 animate-ping"></div>
+                    </div>
+                    <div className="w-1 h-20 lg:h-24 bg-subtleBlue/20 rounded-full -mt-2"></div>
+                  </div>
+                )}
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -14,7 +14,7 @@ function HomePage() {
     >
       <div className="absolute -top-20 lg:top-0 -right-64">
         <Image
-          className="object-cover"
+          className="object-cover z-0"
           src={"/img/Vector1.svg"}
           width={752}
           height={649}
@@ -23,7 +23,7 @@ function HomePage() {
       </div>
       <div className="absolute top-96 -right-20 lg:right-28 h-auto w-auto">
         <Image
-          className="object-cover"
+          className="object-cover z-0"
           src={"/img/Vector2.svg"}
           width={438}
           height={458}
@@ -37,7 +37,7 @@ function HomePage() {
       >
         victorH.
       </Link>
-      <div>
+      <div className="relative">
         <motion.h1
           initial={initial}
           whileInView={whileInView}
@@ -61,7 +61,7 @@ function HomePage() {
           <br className="hidden sm:block" /> with modern frontend web
           technologies.
         </motion.p>
-        <Link href="/ #projects">
+        <Link href="/#projects">
           <motion.button
             initial={initial}
             whileInView={whileInView}

@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
+import ArrowDiagonal from "@/svg/Icons/ArrowDiagonal";
 
 function Projects() {
   const projects = [
@@ -43,7 +45,7 @@ function Projects() {
       description:
         "Alumni Management System is a capstone project designed for six users. It offers a comprehensive approach in managing learning materials, account creation, subject tagging, and more in a systematic manner. <br /> <br /> Features: Random Snapshot, bulk creation and tagging of subjects, email notifications, robust exam interface, and faster transaction requests.",
       image: "/img/lmsProject.png",
-      link: "hhttps://lms.bcpsms.com/",
+      link: "https://lms.bcpsms.com/",
     },
   ];
 
@@ -117,6 +119,15 @@ function Projects() {
                     className="sm:text-lg font-light text-subtleBlue"
                     dangerouslySetInnerHTML={{ __html: item.description }}
                   ></p>
+                  <Link href={item.link} target="_blank">
+                    <button
+                      type="button"
+                      className="flex items-center btn border text-greatBlue sm:text-lg font-semibold mt-10 py-3 px-5 rounded border-greatBlue transition-colors hover:bg-greatBlue hover:bg-opacity-10"
+                    >
+                      <span className="me-3">Live Preview</span>
+                      <ArrowDiagonal />
+                    </button>
+                  </Link>
                 </div>
                 <motion.div
                   initial={{ opacity: 0, x: 200 }}

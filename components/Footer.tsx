@@ -51,7 +51,7 @@ function Footer() {
     <div className="relative max-w-[1300px] m-auto mb-32 px-5 lg:px-10 text-slate-100">
       <div className="my-20 text-center max-w-[580px] m-auto">
         <h3 className="text-xl sm:text-2xl font-bold text-greatBlue mb-3">
-          Get in touch, let's talk.
+          Get in touch, let&apos;s talk.
         </h3>
         <motion.p
           initial={{ opacity: 0, y: 150 }}
@@ -66,8 +66,8 @@ function Footer() {
           <span className="text-greatBlue font-semibold">
             higoyvictor21@gmail.com
           </span>
-          . I'm always open to discussing your unique needs and how we can work
-          together to achieve your goals.
+          . I&apos;m always open to discussing your unique needs and how we can
+          work together to achieve your goals.
         </motion.p>
       </div>
       <div className="bg-greatBlueOpacity w-full h-[3px] mb-3"></div>
@@ -79,6 +79,7 @@ function Footer() {
           {socialLinks.map((social, index) => {
             return (
               <Link
+                key={index}
                 href={social.link}
                 className="cursor-pointer"
                 target="_blank"

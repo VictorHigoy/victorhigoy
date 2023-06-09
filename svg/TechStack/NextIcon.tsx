@@ -7,7 +7,7 @@ export default function NextIcon() {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g clip-path="url(#clip0_22_59)">
+      <g clipPath="url(#clip0_22_59)">
         <path
           d="M37.2271 0.00469971H46.9813V1.80508H43.1119V11.2766H41.1771V1.80508H37.2271V0.00469971Z"
           fill="white"
@@ -25,8 +25,8 @@ export default function NextIcon() {
           fill="white"
         />
         <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
+          fillRule="evenodd"
+          clipRule="evenodd"
           d="M11.4995 11.2766L2.41839 0H0V11.2719H1.93471V2.40936L9.06897 11.2766H11.4995Z"
           fill="white"
         />

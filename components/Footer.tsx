@@ -11,7 +11,6 @@ import Twitter from "@/svg/Social/Twitter";
 
 function Footer() {
   const [hoveredIndex, setHoveredIndex] = useState(null);
-  console.log(hoveredIndex);
 
   const handleMouseEnter = (index: any) => {
     setHoveredIndex(index);

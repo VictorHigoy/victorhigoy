@@ -43,7 +43,7 @@ function HomePage() {
           whileInView={whileInView}
           transition={{ duration: 0.2 }}
           viewport={{ once: true }}
-          className="text-5xl sm:text-6xl font-bold mb-5 text-subtleBlue"
+          className="text-5xl leading-10 sm:text-6xl font-bold mb-5 text-subtleBlue"
         >
           UI/UX & Frontend <br /> Developer
         </motion.h1>

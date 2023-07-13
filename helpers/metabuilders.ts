@@ -21,13 +21,13 @@ export function metaBuilder({
       description: description,
       url: `${
         process.env.NODE_ENV === "production"
-          ? "https://fremontsigncompany.com"
+          ? "https://victorhigoy.vercel.app/"
           : "http://localhost:3000"
       }`,
       siteName: "Fremont Sign Company",
       images: [
         {
-          url: imgUrl ? imgUrl : "./img/VictorPortfolioMetaBuilder.png",
+          url: imgUrl ? imgUrl : "/img/VictorPortfolioMetaBuilder.png",
           width: imgWidth ? imgWidth : "1920",
           height: imgHeight ? imgHeight : "1080",
         },

@@ -28,8 +28,8 @@ export function metaBuilder({
       images: [
         {
           url: "/img/VictorPortfolioMetaBuilder.png",
-          width: "1920",
-          height: "1080",
+          width: 1920,
+          height: 1080,
         },
       ],
       locale: "en-US",

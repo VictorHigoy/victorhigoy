@@ -2,11 +2,6 @@ import "./globals.css";
 import Head from "next/head";
 import { metaBuilder } from "@/helpers/metabuilders";
 
-export const metadata = {
-  title: "Victor Higoy",
-  description: "Frontend Developer based in the Philippines",
-};
-
 export async function generateMetadata() {
   return metaBuilder({
     title: "Victor Higoy Jr",

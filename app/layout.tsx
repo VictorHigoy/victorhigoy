@@ -1,13 +1,24 @@
 import "./globals.css";
 import Head from "next/head";
-import { metaBuilder } from "@/helpers/metabuilders";
+import { Metadata } from "next";
 
-export async function generateMetadata() {
-  return metaBuilder({
-    title: "Victor Higoy Jr",
-    description: "Frontend Developer based in the Philippines",
-  });
-}
+export const metadata: Metadata = {
+  title: "Victor Higoy",
+  description: "Frontend Developer based in the Philippines",
+  openGraph: {
+    url: "https://nextjs.org",
+    siteName: "Next.js",
+    images: [
+      {
+        url: "/img/VictorPortfolioMetaBuilder.png",
+        width: 1920,
+        height: 1080,
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
 
 export default function RootLayout({
   children,

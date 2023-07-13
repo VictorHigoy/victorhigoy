@@ -26,8 +26,8 @@ export function metaBuilder({
       images: [
         {
           url: imgUrl ? imgUrl : "/img/VictorPortfolioMetaBuilder.png",
-          width: imgWidth ? imgWidth : "1920",
-          height: imgHeight ? imgHeight : "1080",
+          width: imgWidth ? imgWidth : "800",
+          height: imgHeight ? imgHeight : "800",
         },
       ],
       locale: "en-US",

@@ -1,4 +1,12 @@
 import "./globals.css";
+import { metaBuilder } from "@/helpers/metabuilders";
+
+export async function generateMetadata() {
+  return metaBuilder({
+    title: "Victor Higoy Jr",
+    description: "Frontend Developer based in the Philippines",
+  });
+}
 
 export default function RootLayout({
   children,

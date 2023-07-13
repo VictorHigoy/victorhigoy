@@ -5,10 +5,7 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import type { Metadata } from "next";
-
 export const metadata = {
-  title: "Victor Higoy Jr",
-  description: "Frontend Developer based in the Philippines",
   openGraph: {
     title: "Next.js",
     description: "The React Framework for the Web",
@@ -16,12 +13,12 @@ export const metadata = {
     siteName: "Next.js",
     images: [
       {
-        url: "https://victorhigoy.vercel.app/img/VictorPortfolioMetaBuilder.png",
+        url: "https://nextjs.org/og.png",
         width: 800,
         height: 600,
       },
       {
-        url: "https://victorhigoy.vercel.app/img/VictorPortfolioMetaBuilder.png",
+        url: "https://nextjs.org/og-alt.png",
         width: 1800,
         height: 1600,
         alt: "My custom alt",
@@ -31,7 +28,6 @@ export const metadata = {
     type: "website",
   },
 };
-
 function Home() {
   return (
     <div className="w-full overflow-hidden">

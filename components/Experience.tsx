@@ -7,7 +7,7 @@ function Experience() {
   const experiences = [
     {
       id: 3,
-      title: "Graduation",
+      title: "Graduation - Magna Cum Laude",
       company: "Bestlink College of the Philippines",
       description: "Bachelor of Science in Information Technology",
     },

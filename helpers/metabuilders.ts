@@ -27,7 +27,7 @@ export function metaBuilder({
       siteName: "Fremont Sign Company",
       images: [
         {
-          url: imgUrl ? imgUrl : "/img/VictorPortfolioMetaBuilder.png",
+          url: imgUrl ? imgUrl : "/public/img/VictorPortfolioMetaBuilder.png",
           width: imgWidth ? imgWidth : "1920",
           height: imgHeight ? imgHeight : "1080",
         },

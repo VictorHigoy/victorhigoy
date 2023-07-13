@@ -25,9 +25,11 @@ export function metaBuilder({
       siteName: "Victor Higoy Jr",
       images: [
         {
-          url: imgUrl ? imgUrl : "/img/VictorPortfolioMetaBuilder.png",
-          width: imgWidth ? imgWidth : "800",
-          height: imgHeight ? imgHeight : "800",
+          url: imgUrl
+            ? imgUrl
+            : "https://victorhigoy.vercel.app/img/VictorPortfolioMetaBuilder.png",
+          width: imgWidth ? imgWidth : "1920",
+          height: imgHeight ? imgHeight : "1080",
         },
       ],
       locale: "en-US",

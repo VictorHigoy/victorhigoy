@@ -4,14 +4,34 @@ import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
-import { metaBuilder } from "@/helpers/metabuilders";
+import type { Metadata } from "next";
 
-export async function generateMetadata() {
-  return metaBuilder({
-    title: "Victor Higoy Jr",
-    description: "Frontend Developer based in the Philippines",
-  });
-}
+export const metadata = {
+  title: "Victor Higoy Jr",
+  description: "Frontend Developer based in the Philippines",
+  openGraph: {
+    title: "Next.js",
+    description: "The React Framework for the Web",
+    url: "https://nextjs.org",
+    siteName: "Next.js",
+    images: [
+      {
+        url: "https://victorhigoy.vercel.app/img/VictorPortfolioMetaBuilder.png",
+        width: 800,
+        height: 600,
+      },
+      {
+        url: "https://victorhigoy.vercel.app/img/VictorPortfolioMetaBuilder.png",
+        width: 1800,
+        height: 1600,
+        alt: "My custom alt",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+};
+
 function Home() {
   return (
     <div className="w-full overflow-hidden">

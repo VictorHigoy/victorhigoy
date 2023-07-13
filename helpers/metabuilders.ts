@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export function metaBuilder({
   title,
   description,
@@ -24,12 +22,12 @@ export function metaBuilder({
           ? "https://victorhigoy.vercel.app/"
           : "http://localhost:3000"
       }`,
-      siteName: "Fremont Sign Company",
+      siteName: "Victor Higoy Jr",
       images: [
         {
-          url: "https://victorhigoy.vercel.app/img/VictorPortfolioMetaBuilder.png",
-          width: 1920,
-          height: 1080,
+          url: imgUrl ? imgUrl : "/img/VictorPortfolioMetaBuilder.png",
+          width: imgWidth ? imgWidth : "1920",
+          height: imgHeight ? imgHeight : "1080",
         },
       ],
       locale: "en-US",

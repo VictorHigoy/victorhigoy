@@ -1,25 +1,12 @@
 import "./globals.css";
-import Head from "next/head";
-import { Metadata } from "next";
+import { metaBuilder } from "@/helpers/metabuilders";
 
-export const metadata: Metadata = {
-  title: "Victor Higoy",
-  description: "Frontend Developer based in the Philippines",
-  openGraph: {
-    url: "https://nextjs.org",
-    siteName: "Next.js",
-    images: [
-      {
-        url: "/img/VictorPortfolioMetaBuilder.png",
-        width: 1920,
-        height: 1080,
-      },
-    ],
-    locale: "en_US",
-    type: "website",
-  },
-};
-
+export async function generateMetadata() {
+  return metaBuilder({
+    title: "Victor Higoy Jr",
+    description: "Frontend Developer based in the Philippines",
+  });
+}
 export default function RootLayout({
   children,
 }: {
@@ -27,9 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <link rel="icon" href="/favicon.svg" />
-      </Head>
+      <link rel="icon" type="image/x-icon" href="/favicon.svg" />
       <body
         className={`font-sans bg-[#002D62] bg-[url("/img/NoiseAndTexture.svg")]`}
       >

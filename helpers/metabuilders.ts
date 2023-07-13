@@ -19,10 +19,10 @@ export function metaBuilder({
       description: description,
       url: `${
         process.env.NODE_ENV === "production"
-          ? "https://victorhigoy.vercel.app/"
+          ? "https://fremontsigncompany.com"
           : "http://localhost:3000"
       }`,
-      siteName: "Victor Higoy Jr",
+      siteName: "Fremont Sign Company",
       images: [
         {
           url: imgUrl ? imgUrl : "/img/VictorPortfolioMetaBuilder.png",

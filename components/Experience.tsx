@@ -22,7 +22,7 @@ function Experience() {
       id: 1,
       title: "Freelance",
       description:
-        "Designed and developed responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. I implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
+        "Designed and developed responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
     },
   ];
 

@@ -22,7 +22,7 @@ function Experience() {
       id: 1,
       title: "Freelance",
       description:
-        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers.",
+        "Designed and developed responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. I implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
     },
   ];
 

@@ -10,7 +10,8 @@ function Experience() {
       title: "Software Developer",
       date: "August 2023 - Present Date",
       company: "Zkript Solutions OPC",
-      description: "Bachelor of Science in Information Technology",
+      description:
+        "Designing and implementing versatile applications, seamlessly integrating frontend and backend technologies. Ensuring cross-platform compatibility and collaborate closely with teams for effective software solutions",
     },
     {
       id: 3,

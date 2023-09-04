@@ -18,7 +18,7 @@ function Experience() {
       title: "Freelance",
       date: "April 2022 - Present Date",
       description:
-        "Designed and developed responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
+        "Designing and developing responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
     },
     {
       id: 2,

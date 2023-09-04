@@ -6,23 +6,34 @@ import Image from "next/image";
 function Experience() {
   const experiences = [
     {
-      id: 3,
-      title: "Graduation - Magna Cum Laude",
-      company: "Bestlink College of the Philippines",
+      id: 4,
+      title: "Software Developer",
+      date: "August 2023 - Present Date",
+      company: "Zkript Solutions OPC",
       description: "Bachelor of Science in Information Technology",
     },
     {
-      id: 2,
-      title: "Internship",
-      company: "Zkript Solutions OPC",
+      id: 3,
+      title: "Freelance",
+      date: "April 2022 - Present Date",
       description:
-        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers.",
+        "Designed and developed responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
+    },
+    {
+      id: 2,
+      title: "Graduation - Magna Cum Laude",
+      date: "2019 - 2023",
+      company: "Bestlink College of the Philippines",
+      description:
+        "Bachelor of Science in Information Technology - Major in Information Management",
     },
     {
       id: 1,
-      title: "Freelance",
+      title: "Internship",
+      date: "April 2023 - July 2023",
+      company: "Zkript Solutions OPC",
       description:
-        "Designed and developed responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
+        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers.",
     },
   ];
 
@@ -69,8 +80,11 @@ function Experience() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.3 }}
                   >
-                    <p className="sm:text-lg font-medium text-subtleBlue mb-3">
+                    <p className="sm:text-lg font-medium text-subtleBlue mb-0">
                       {item.company}
+                    </p>
+                    <p className="font-sm text-md text- mb-3 text-gray-400">
+                      {item.date}
                     </p>
                     <p className="sm:text-lg font-light text-subtleBlue">
                       {item.description}

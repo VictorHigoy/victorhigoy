@@ -6,9 +6,17 @@ import Image from "next/image";
 function Experience() {
   const experiences = [
     {
+      id: 5,
+      title: "Web Developer - Contractual",
+      date: "August 2023 - Present Date",
+      company: "Van Law Firm",
+      description:
+        "Developing and maintaining multiple websites for the company, fixing bugs and errors, ensuring optimal performance, and improving user experience across various platforms",
+    },
+    {
       id: 4,
       title: "Software Developer",
-      date: "August 2023 - Present Date",
+      date: "August 2023 - January 2024",
       company: "Zkript Solutions OPC",
       description:
         "Designing and implementing versatile applications, seamlessly integrating frontend and backend technologies. Ensuring cross-platform compatibility and collaborate closely with teams for effective software solutions",
@@ -18,7 +26,7 @@ function Experience() {
       title: "Freelance",
       date: "April 2022 - Present Date",
       description:
-        "Designing and developing responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality.",
+        "Designing and developing responsive and user-friendly websites for various clients, ensuring an engaging and seamless user experience. Implemented modern frameworks and technologies to optimize website performance and enhance overall functionality",
     },
     {
       id: 2,
@@ -34,7 +42,7 @@ function Experience() {
       date: "April 2023 - July 2023",
       company: "Zkript Solutions OPC",
       description:
-        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers.",
+        "Performed software development tasks, contributed to the design and architecture of software applications, and maintained close communication with senior software engineers",
     },
   ];
 

@@ -11,6 +11,7 @@ import FigmaIcon from "@/svg/TechStack/FigmaIcon";
 import SassIcon from "@/svg/TechStack/SassIcon";
 import FirebaseIcon from "@/svg/TechStack/FirebaseIcon";
 import MongoDbIcon from "@/svg/TechStack/MongoDbIcon";
+import WordpressIcon from "@/svg/TechStack/WordpressIcon";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
@@ -114,6 +115,14 @@ function About() {
       icon: <MongoDbIcon />,
       pXaxis: "px-[35px]",
       pYaxis: "py-4",
+    },
+    {
+      id: 10,
+      duration: 0.21,
+      name: "Wordpress",
+      icon: <WordpressIcon />,
+      pXaxis: "px-5",
+      pYaxis: "py-5",
     },
   ];
 

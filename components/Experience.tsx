@@ -7,7 +7,7 @@ function Experience() {
   const experiences = [
     {
       id: 5,
-      title: "Web Developer - Contractual",
+      title: "UI/UX Web Developer - Contractual",
       date: "August 2023 - Present Date",
       company: "Van Law Firm",
       description:

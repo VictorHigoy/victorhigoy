@@ -20,19 +20,6 @@ function Projects() {
       link: "https://outsourcedmanpower.com/",
     },
     {
-      title: "Singh Signs",
-      tech: [
-        { name: "Next.js", duration: 0.03 },
-        { name: "Typescript", duration: 0.05 },
-        { name: "Tailwindccs", duration: 0.07 },
-        { name: "Figma", duration: 0.08 },
-      ],
-      description:
-        "Singh Signs is a versatile web application that offers services like engraving, engineering, design, permits, and the sign master program. It provides users with essential information about its services.",
-      image: "/img/SinghSignProject.png",
-      link: "https://singh-signs.vercel.app/",
-    },
-    {
       title: "Fitness Calculation",
       tech: [
         { name: "Next.js", duration: 0.03 },
@@ -44,6 +31,19 @@ function Projects() {
         "Fitness Calculation is a web application that enables you to calculate your BMI and calories based on your goal, including diet plans. It offers valuable insights about training and nutrition for enhanced knowledge in these areas.",
       image: "/img/FitnessCalculationProject.png",
       link: "https://fitness-calculation.vercel.app/",
+    },
+    {
+      title: "Singh Signs",
+      tech: [
+        { name: "Next.js", duration: 0.03 },
+        { name: "Typescript", duration: 0.05 },
+        { name: "Tailwindccs", duration: 0.07 },
+        { name: "Figma", duration: 0.08 },
+      ],
+      description:
+        "Singh Signs is a versatile web application that offers services like engraving, engineering, design, permits, and the sign master program. It provides users with essential information about its services.",
+      image: "/img/SinghSignProject.png",
+      link: "https://singh-signs.vercel.app/",
     },
     {
       title: "Learning Management System",

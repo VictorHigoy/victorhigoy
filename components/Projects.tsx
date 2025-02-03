@@ -8,6 +8,17 @@ import ArrowDiagonal from "@/svg/Icons/ArrowDiagonal";
 function Projects() {
   const projects = [
     {
+      title: "Outsourced Manpower",
+      tech: [
+        { name: "Figma", duration: 0.03 },
+        { name: "Wordpress", duration: 0.05 },
+      ],
+      description:
+        "Outsourced Manpower is a comprehensive platform offering a range of virtual assistant services, including executive assistance, accounting, human resources, marketing, and sales support.",
+      image: "/img/OutsourcedManpower.png",
+      link: "https://outsourcedmanpower.com/",
+    },
+    {
       title: "Singh Signs",
       tech: [
         { name: "Next.js", duration: 0.03 },

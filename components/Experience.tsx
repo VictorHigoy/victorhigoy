@@ -8,7 +8,7 @@ function Experience() {
     {
       id: 5,
       title: "UI/UX Web Developer - Contractual",
-      date: "August 2023 - Present Date",
+      date: "August 2023 - January 2025",
       company: "Van Law Firm",
       description:
         "Developing and maintaining multiple websites for the company, fixing bugs and errors, ensuring optimal performance, and improving user experience across various platforms",

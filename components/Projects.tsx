@@ -8,18 +8,6 @@ import ArrowDiagonal from "@/svg/Icons/ArrowDiagonal";
 function Projects() {
   const projects = [
     {
-      title: "Outsourced Manpower",
-      tech: [
-        { name: "Figma", duration: 0.03 },
-        { name: "Wordpress", duration: 0.05 },
-        { name: "ClickFunnels", duration: 0.07 },
-      ],
-      description:
-        "Outsourced Manpower is a comprehensive platform offering a range of virtual assistant services, including executive assistance, accounting, human resources, marketing, and sales support.",
-      image: "/img/OutsourcedManpower.png",
-      link: "https://outsourcedmanpower.com/",
-    },
-    {
       title: "Fitness Calculation",
       tech: [
         { name: "Next.js", duration: 0.03 },
@@ -31,6 +19,18 @@ function Projects() {
         "Fitness Calculation is a web application that enables you to calculate your BMI and calories based on your goal, including diet plans. It offers valuable insights about training and nutrition for enhanced knowledge in these areas.",
       image: "/img/FitnessCalculationProject.png",
       link: "https://fitness-calculation.vercel.app/",
+    },
+    {
+      title: "Outsourced Manpower",
+      tech: [
+        { name: "Figma", duration: 0.03 },
+        { name: "Wordpress", duration: 0.05 },
+        { name: "ClickFunnels", duration: 0.07 },
+      ],
+      description:
+        "Outsourced Manpower is a comprehensive platform offering a range of virtual assistant services, including executive assistance, accounting, human resources, marketing, and sales support.",
+      image: "/img/OutsourcedManpower.png",
+      link: "https://outsourcedmanpower.com/",
     },
     {
       title: "Singh Signs",

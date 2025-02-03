@@ -12,6 +12,7 @@ function Projects() {
       tech: [
         { name: "Figma", duration: 0.03 },
         { name: "Wordpress", duration: 0.05 },
+        { name: "ClickFunnels", duration: 0.07 },
       ],
       description:
         "Outsourced Manpower is a comprehensive platform offering a range of virtual assistant services, including executive assistance, accounting, human resources, marketing, and sales support.",

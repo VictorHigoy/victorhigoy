@@ -34,7 +34,7 @@ function Experience() {
       date: "2019 - 2023",
       company: "Bestlink College of the Philippines",
       description:
-        "Bachelor of Science in Information Technology - Major in Information Management",
+        "Bachelor of Science in Information Technology - Major in Information Management. Top Research Paper – among more than 900 research paper presented during the 5th SIMP-AAG-BCP Multidisciplinary Research Festival",
     },
     {
       id: 1,

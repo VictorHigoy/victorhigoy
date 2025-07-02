@@ -6,6 +6,14 @@ import Image from "next/image";
 function Experience() {
   const experiences = [
     {
+      id: 6,
+      title: "Frontend Developer - Fulltime",
+      date: "January 2025 - Present Date",
+      company: "Futr Mobii",
+      description:
+        "Built responsive Web 3.0 interfaces with optimized performance for real-time blockchain interactions. Integrated smart contracts and Web3 APIs in collaboration with backend and blockchain teams",
+    },
+    {
       id: 5,
       title: "UI/UX Web Developer - Contractual",
       date: "August 2023 - January 2025",

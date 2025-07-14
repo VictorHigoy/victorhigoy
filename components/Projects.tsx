@@ -17,7 +17,7 @@ function Projects() {
         { name: "Figma", duration: 0.08 },
       ],
       description:
-        "BackToTheFutr.com is the official hub for the Back to the Future franchise—offering canon news, upcoming events, licensed merchandise, film updates, cast announcements, curated collectibles, screenings, and fan experiences directly from the creators. It was designed by Gillianne Dela Cruz and implemented by Victor Higoy Jr",
+        "BackToTheFutr.com is the official hub for the Back to the Future franchise—offering canon news, upcoming events, licensed merchandise, film updates, cast announcements, curated collectibles, screenings, and fan experiences directly from the creators. It was designed by Gillianne Dela Cruz and implemented by Victor Higoy Jr and John Ogama",
       image: "/img/backtothefutrProject.png",
       link: "https://www.backtothefutr.com/",
     },

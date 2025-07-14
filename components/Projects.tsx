@@ -8,6 +8,34 @@ import ArrowDiagonal from "@/svg/Icons/ArrowDiagonal";
 function Projects() {
   const projects = [
     {
+      title: "Back to the Futr",
+      tech: [
+        { name: "Next.js", duration: 0.03 },
+        { name: "Typescript", duration: 0.05 },
+        { name: "TailwindCss", duration: 0.07 },
+        { name: "Framer Motion", duration: 0.07 },
+        { name: "Figma", duration: 0.08 },
+      ],
+      description:
+        "BackToTheFutr.com is the official hub for the Back to the Future franchise—offering canon news, upcoming events, licensed merchandise, film updates, cast announcements, curated collectibles, screenings, and fan experiences directly from the creators. It was designed by Gillianne Dela Cruz and implemented by Victor Higoy Jr",
+      image: "/img/backtothefutrProject.png",
+      link: "https://www.backtothefutr.com/",
+    },
+    {
+      title: "Second Breakfast",
+      tech: [
+        { name: "React.js", duration: 0.03 },
+        { name: "Typescript", duration: 0.05 },
+        { name: "TailwindCss", duration: 0.07 },
+        { name: "Framer Motion", duration: 0.07 },
+        { name: "Figma", duration: 0.08 },
+      ],
+      description:
+        "SecondBreakfast.Quest offers a playful, community-driven hub inspired by gaming culture—celebrating hobbit-style joy with curated events, whimsical imagery, and shared storytelling. It fosters a vibrant atmosphere centered on food, fun, and camaraderie. It was designed by Gillianne Dela Cruz and implemented by Victor Higoy Jr",
+      image: "/img/secondBreakfast.png",
+      link: "https://secondbreakfast.quest/",
+    },
+    {
       title: "Fitness Calculation",
       tech: [
         { name: "Next.js", duration: 0.03 },
